@@ -1,6 +1,7 @@
 """
 异常处理
 """
+import traceback
 
 while True:
     try:
@@ -11,7 +12,10 @@ while True:
         break
     except ZeroDivisionError:
         print("The second number can not b zero.try again.")
+        traceback.print_exc()
     except ValueError:
         print("please enter number.try again.")
+        traceback.print_exc()
     except:  # 捕捉其他异常
+        traceback.print_exc()
         break
