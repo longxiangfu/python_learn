@@ -1,8 +1,9 @@
 '''
-装饰器演示二：计算函数执行时间
+普通装饰器演示二：计算函数执行时间
 '''
 
 import time
+
 
 def timing_fun(func):
     def wrapper():
@@ -10,6 +11,7 @@ def timing_fun(func):
         func()
         stop = time.time()
         return stop - start
+
     return wrapper
 
 

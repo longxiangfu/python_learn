@@ -1,5 +1,5 @@
 """
-装饰器演示三：计算函数执行时间，更加通用
+普通装饰器演示三：计算函数执行时间，更加通用
 """
 
 import time
@@ -39,3 +39,7 @@ countdown(10000)
 countdown(10000000)
 test_list_append()
 test_list_compre()
+# countdown 0.000995635986328125
+# countdown 0.8118045330047607
+# test_list_append 0.18849992752075195
+# test_list_compre 0.09075236320495605
