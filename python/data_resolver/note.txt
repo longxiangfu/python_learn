@@ -1,0 +1,10 @@
+总结
+1、图线的分类：
+    普通数量图（x轴为指标，y轴为对应的数据量）countplot;
+    散点图scatterplot;
+    折线图plot;
+    箱形图boxplot;
+    点状图pointPlot
+2、对数据进行过滤
+    直接；
+    loc[]
