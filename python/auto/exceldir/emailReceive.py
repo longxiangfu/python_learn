@@ -37,8 +37,8 @@ def get_email_content(server):
     """
     # 返回邮件的总数目和占用服务器的空间大小
     email_num, email_size = server.stat()
-    # 获取电子邮件信息,poplib.POP3不能获取未读邮件，要想获取，可以使用其他地方库
-    rsp, msglines, msgsiz = server.retr(email_num)  # 返回最新的邮件
+    # 获取电子邮件信息,poplib.POP3不能获取未读邮件，要想获取，可以使用其他第三方库
+    rsp, msglines, msgsiz = server.retr(email_num)  # 返回最新的邮件，参数为邮件索引
     # 拼接邮件内容并对内容进行GBK解码
     msg_content = b'\r\n'.join(msglines).decode('gbk')
     # 把邮件内容解析为Message内容
