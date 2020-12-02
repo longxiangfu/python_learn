@@ -1,0 +1,301 @@
+Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_65408651.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_82282865.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_77687380.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_67138390.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_22283476.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_74929830.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_285145715.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_42737773.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_54438742.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_56192482.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_75527335.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_48102686.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_8888340.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_17051763.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_27596545.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_18600330.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_29415307.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_16076148.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_414211791.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_97297507.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_26310102.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_39077040.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_34389516.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_45000633.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_17560149.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_65408651.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_82282865.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_77687380.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_67138390.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_22283476.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_74929830.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_285145715.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_42737773.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_54438742.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_56192482.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_75527335.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_48102686.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_8888340.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_17051763.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_27596545.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_18600330.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_29415307.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_16076148.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_414211791.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_97297507.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_26310102.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_39077040.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_34389516.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_45000633.xml'
+name: [潮汕好男人], uid: [19071708]Traceback (most recent call last):
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 129, in gt_up_video_info
+    save_file(barrage_path, content)
+  File "E:/pycharmWork/python/pachong/up_100/up_100.py", line 41, in save_file
+    with open(filepath, 'a', encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'up_100\\19071708\\barrage_17560149.xml'
+name: [潮汕好男人], uid: [19071708]
