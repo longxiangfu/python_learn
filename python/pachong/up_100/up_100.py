@@ -5,9 +5,17 @@ import requests
 import os
 import json
 import traceback
+import time
+
+from threading import Thread
+from concurrent.futures import ThreadPoolExecutor
+from queue import Queue
 
 
 dir_path = 'up_100'
+executor = ThreadPoolExecutor(10)
+queue = Queue()
+# 为了防止反爬，可以设置ip池
 
 def get_http_session(pool_connections=2, pool_maxsixe=10, max_retries=3):
     """
@@ -38,7 +46,7 @@ def save_file(filepath, content):
     :param content:
     :return:
     """
-    with open(filepath, 'a', encoding='utf-8') as f:
+    with open(filepath, 'w', encoding='utf-8') as f:
         f.write(content)
 
 def make_dir(name):
@@ -74,13 +82,7 @@ def read_json(filepath):
     """
     with open(filepath, 'r', encoding='utf-8') as f:
         res = f.read()
-    return json.loads(res)  # 将res转成字典
-
-def base_info_task(power_json):
-    for d in power_json:
-        uid = d['uid']
-        name = d['name']
-        get_up_base_info(name, uid)
+    return json.loads(res)  # 将json转成字典
 
 
 def get_up_base_info(name, uid):
@@ -92,6 +94,9 @@ def get_up_base_info(name, uid):
             filepath = os.path.join(up_dir, f'{uid}_base_info.json')
             content = json.dumps(r.json(), indent=4, ensure_ascii=False)  # json.dumps()：将结果格式化为json标准格式
             save_file(filepath, content)
+            print(f'{name} up主信息保存成功')
+            global queue
+            queue.put((name, uid, filepath))
         else:
             fail_str = f'name: [{name}], uid: [{uid}], url: [{url}]'
             log(fail_str, 'fail', 'base_fail.log')
@@ -165,7 +170,7 @@ def gt_up_video_info(name, uid, filepath):
             return
         for d in data:
             try:
-                # get_video_barrage(d, name, aid)
+                get_video_barrage(d, name, aid)
                 get_video_comment_info(aid, name)
 
             except Exception as e:
@@ -174,12 +179,33 @@ def gt_up_video_info(name, uid, filepath):
                 log(error_str, 'error', 'gt_up_video_info.log')
 
 
+def base_info_task(power_json):
+    for d in power_json:
+        uid = d['uid']
+        name = d['name']
+        # 通过线程池去执行
+        executor.submit(get_up_base_info, name, uid)
+
+
+def video_info_task():
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        while True:
+            global queue
+            name, uid, filepath = queue.get()
+            executor.submit(gt_up_video_info, name, uid, filepath)
+            queue.task_done()
+            time.sleep(2)
+
 
 def main():
-    # power_json = read_json('power_up_100.json')
+    power_json = read_json('power_up_100.json')
+
     # base_info_task(power_json)
-    # 获取视频弹幕信息
-    gt_up_video_info('潮汕好男人', '19071708', 'up_100\\潮汕好男人\\19071708_base_info.json')
+    # # 获取视频弹幕和评论信息
+    # gt_up_video_info('潮汕好男人', '19071708', 'up_100\\潮汕好男人\\19071708_base_info.json')
+
+    Thread(target=base_info_task, args=(power_json,)).start()
+    Thread(target=video_info_task).start()
 
 
 if __name__ == '__main__':
