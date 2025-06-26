@@ -29,4 +29,8 @@ def fun2():
 
 
 fun1()
+# this is a error log
+# I am a function1
 fun2()
+# this is a info log
+# I am a function2

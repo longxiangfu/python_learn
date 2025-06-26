@@ -24,21 +24,21 @@ def countdown(n):
 
 
 @timethis
-def test_list_append():
+def list_append():
     lst = []
     for i in range(1000000):
         lst.append(i)
 
 
 @timethis
-def test_list_compre():
+def list_compre():
     [i for i in range(1000000)]
 
 
 countdown(10000)
 countdown(10000000)
-test_list_append()
-test_list_compre()
+list_append()
+list_compre()
 # countdown 0.000995635986328125
 # countdown 0.8118045330047607
 # test_list_append 0.18849992752075195
