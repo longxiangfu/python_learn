@@ -5,10 +5,8 @@ python-docx操作word文档
 import docx
 from docx.shared import Inches  # 定义插入图片的英寸
 
-document = docx.document.Document()
-# 返回值没有提示时，可以按照下面方式指定返回值的类型，但是下面方式还是不好使，那只能看官方文档了
-# print(type(document))
-# assert isinstance(document, docx.document.Document)
+# 获取文档对象
+document = docx.Document()
 
 # 新增段落
 p2 = document.add_paragraph('这是个段落')
@@ -30,6 +28,6 @@ row = table.rows[1]
 row.cells[0].text = '第二行第一列'
 row.cells[1].text = '第二行第二列'
 
-# 添加图片
-document.add_picture('liuyifei.jpg', width=Inches(1.25))
+# 添加图片   Inches(1)：1英寸
+document.add_picture('liuyifei.jpg', width=Inches(1))
 document.save('new.docx')

@@ -1,10 +1,25 @@
 """
 Excel自动处理并发送邮件
+# 1
+>>> df = pd.DataFrame([[1, 2], [4, 5], [7, 8]],
+...                   index=['cobra', 'viper', 'sidewinder'],
+...                   columns=['max_speed', 'shield'])
+>>> df
+            max_speed  shield
+cobra               1       2
+viper               4       5
+sidewinder          7       8
+
+>>> df.loc[df['shield'] > 6]
+            max_speed  shield
+sidewinder          7       8
+
 """
 
 import pandas as pd
 import os
 import yagmail
+from pandas.core.interchange.dataframe_protocol import DataFrame
 
 
 def send_email(name, to, file_path):
@@ -32,8 +47,8 @@ def main():
     读入excel数据
     """
     excel_path = '渠道数据分析总表.xlsx'
-    # 读入总数据
-    data = pd.read_excel(excel_path)
+    # 读入数据,返回DataFrame对象
+    data_frame = pd.read_excel(excel_path)
 
     """
     按负责人名称拆分excel
@@ -47,17 +62,21 @@ def main():
         # 创建文件夹路径
         os.makedirs(dirname)
     for name, email in names.items():
-        # df = data[data['负责人'] == name]
-        df = data.loc[data['负责人'] == name]
+        # 筛选数据。将列“负责人”=当前的name的数据筛选出来，返回DataFrame对象
+        sub_data_frame = data_frame.loc[data_frame['负责人'] == name]
+        # 构建文件路径
         file_path = os.path.join(dirname, f'{name}.xlsx')
+        # 获取excel写入对象
         writer = pd.ExcelWriter(file_path)
-        df.to_excel(writer, 'Sheet1')
-        writer.save()
+        # 通过写入对象，将数据写入sheet中
+        sub_data_frame.to_excel(writer, sheet_name='Sheet1')
+        # 保存文件
+        writer._save()
         if email:
             """
             发送邮件
             """
-            send_email(name, email, file_path)
+            # send_email(name, email, file_path)
             print(f'已发送邮件给{name}')
 
 
