@@ -11,6 +11,7 @@ from threading import Thread
 from concurrent.futures import ThreadPoolExecutor
 from queue import Queue
 
+from requests.adapters import HTTPAdapter
 
 dir_path = 'up_100'
 executor = ThreadPoolExecutor(10)
@@ -20,15 +21,15 @@ queue = Queue()
 def get_http_session(pool_connections=2, pool_maxsixe=10, max_retries=3):
     """
     创建http连接池
-    :param pool_connections:
-    :param pool_maxsixe:
-    :param max_retries:
-    :return:
+    :param pool_connections: 连接池大小
+    :param pool_maxsixe: 连接池最大连接数
+    :param max_retries: 最大重试次数
+    :return: session
     """
     # 获取session
     session = requests.session()
     # 获取适配器
-    adapter = requests.adapters.HTTPAdapter(
+    adapter = HTTPAdapter(
         pool_connections=pool_connections,
         pool_maxsize=pool_maxsixe,
         max_retries=max_retries
@@ -82,7 +83,7 @@ def read_json(filepath):
     """
     with open(filepath, 'r', encoding='utf-8') as f:
         res = f.read()
-    return json.loads(res)  # 将json转成字典
+    return json.loads(res)  # 将json字符串转成字典列表
 
 
 def get_up_base_info(name, uid):
@@ -98,8 +99,9 @@ def get_up_base_info(name, uid):
             global queue
             queue.put((name, uid, filepath))
         else:
-            fail_str = f'name: [{name}], uid: [{uid}], url: [{url}]'
+            fail_str = f'name: [{name}], uid: [{uid}], url: [{url}], reason: [{r.reason}]'
             log(fail_str, 'fail', 'base_fail.log')
+
     except Exception as e:
         log(traceback.format_exc(), 'error', 'base_error.log')  # traceback.format_exc()：打印出详细错误信息
         error_str = f'name: [{name}], uid: [{uid}]'
@@ -165,13 +167,15 @@ def gt_up_video_info(name, uid, filepath):
         url = f'https://api.bilibili.com/x/player/pagelist?aid={aid}&jsonp=jsonp'
         player = get_http_session().get(url, timeout=10)
         player = player.json()
-        data = player['data']  # 弹幕基本信息
+        data = player['data']  # 弹幕列表
+
+        get_video_comment_info(aid, name)
+
         if not data:
             return
         for d in data:
             try:
                 get_video_barrage(d, name, aid)
-                get_video_comment_info(aid, name)
 
             except Exception as e:
                 log(traceback.format_exc(), 'error', 'gt_up_video_info.log')  # traceback.format_exc()：打印出详细错误信息
@@ -179,10 +183,18 @@ def gt_up_video_info(name, uid, filepath):
                 log(error_str, 'error', 'gt_up_video_info.log')
 
 
-def base_info_task(power_json):
-    for d in power_json:
-        uid = d['uid']
-        name = d['name']
+def base_info_task(power_json_dict_lst):
+    """
+    循环字典列表，远程获取up主的作品信息
+    Args:
+        power_json_dict_lst: json字典列表
+
+    Returns: None
+
+    """
+    for power_json_dict in power_json_dict_lst:
+        uid = power_json_dict['uid']
+        name = power_json_dict['name']
         # 通过线程池去执行
         executor.submit(get_up_base_info, name, uid)
 
@@ -198,13 +210,13 @@ def video_info_task():
 
 
 def main():
-    power_json = read_json('power_up_100.json')
+    power_json_dict_lst = read_json('power_up_100.json')
+    # base_info_task(power_json_dict_lst)
 
-    # base_info_task(power_json)
-    # # 获取视频弹幕和评论信息
+    # 获取视频弹幕和评论信息
     # gt_up_video_info('潮汕好男人', '19071708', 'up_100\\潮汕好男人\\19071708_base_info.json')
 
-    Thread(target=base_info_task, args=(power_json,)).start()
+    Thread(target=base_info_task, args=(power_json_dict_lst)).start()
     Thread(target=video_info_task).start()
 
 

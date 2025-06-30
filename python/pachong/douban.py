@@ -10,7 +10,7 @@ import time
 
 # from urllib.request import urlretrieve # 下载
 
-download_path = 'E:\\pycharmWork\\python\\pachong\\douban'
+download_path = 'douban'
 if not os.path.exists(download_path):
     os.makedirs(download_path)
 
