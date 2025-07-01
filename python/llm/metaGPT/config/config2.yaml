@@ -1,0 +1,7 @@
+llm:
+#  api_type: 'openai' # or azure / ollama / groq etc. Check LLMType for more options
+#  api_key: 'sk-...' # YOUR_API_KEY
+#  model: 'gpt-4-turbo' # or gpt-3.5-turbo
+  api_type: 'zhipuai'
+  api_key: '98dfaa5e4b5f700ec8f91b681c570d81.Pmxa9VnBPZ5Ol7CY'
+  model: 'glm-4-0520'
