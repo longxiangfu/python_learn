@@ -4,6 +4,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_deepseek import ChatDeepSeek
 from langserve import add_routes
 
+"""
+定义langServe的Server端
+"""
+
+
 model = ChatDeepSeek(model="deepseek-chat", api_key="sk-d31136f3bc6549669a98e9be69c8ef9a")
 
 prompt_template = ChatPromptTemplate.from_messages(
@@ -16,9 +21,8 @@ parser = StrOutputParser()
 
 chain = prompt_template | model | parser
 
-result = chain.invoke({"language": "中文", "text": "hi"})
+chain.invoke({"language": "中文", "text": "hi"})
 
-print(result) # 嗨
 
 
 
