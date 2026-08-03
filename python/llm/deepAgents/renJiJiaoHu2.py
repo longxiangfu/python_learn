@@ -54,7 +54,8 @@ def send_email(to: str, subject: str, body: str) -> str:
 checkpointer = MemorySaver()
 
 # 创建深度代理
-model = init_chat_model("glm-4.6:cloud", model_provider="ollama", base_url="http://localhost:11434")
+# model = init_chat_model("glm-4.6:cloud", model_provider="ollama", base_url="http://localhost:11434")
+model = init_chat_model("deepseek-chat", model_provider="deepseek") # 须添加环境变量：DEEPSEEK_API_KEY
 agent = create_deep_agent(
     model=model,
     tools=[delete_file, read_file, send_email],
@@ -113,4 +114,11 @@ if result.get("__interrupt__"):
 
 
 # 处理最终结果
-print(result["messages"][-1].content) # 邮件已成功发送至 1565267514@qq.com
+print(result["messages"][-1].content)
+# 邮件已发送成功！
+#
+# - **收件人**：1565267514@qq.com
+# - **主题**：这是我的主题
+# - **内容**：这是我的内容
+#
+# 请检查邮箱是否收到。

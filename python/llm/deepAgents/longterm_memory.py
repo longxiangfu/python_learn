@@ -1,20 +1,14 @@
 """
-入门
-1. 默认提示词：deepagents/base_prompt.md
-2. 默认工具：
-write_todos – 更新Agent的待办事项列表
-ls – 列出Agent文件系统中的所有文件
-read_file – 从Agent的文件系统中读取文件
-write_file – 在Agent的文件系统中写入一个新文件
-edit_file – 编辑Agent文件系统中的现有文件
-task – 生成一个子Agent来处理特定任务
+长期记忆： 演示写入本地文件系统
 """
+
 import os
 from typing import Literal
 
 from deepagents import create_deep_agent
 from langchain.chat_models import init_chat_model
 from tavily import TavilyClient
+from deepagents.backends import FilesystemBackend
 
 # 初始化Tavily客户端
 tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
@@ -51,11 +45,20 @@ research_instruction = """您是一位专家级研究员。您的工作是进行
 ## `internet_search`
 使用此工具对给定查询进行互联网搜索。您可以指定要返回的最大结果数、主题以及是否包含原始内容。
 """
-model = init_chat_model("gemma4", model_provider="ollama", base_url="http://localhost:11434")
-# model = init_chat_model("deepseek-chat", model_provider="deepseek")
-agent = create_deep_agent(model = model, tools=[internet_search], system_prompt=research_instruction)
+# model = init_chat_model("gemma4", model_provider="ollama", base_url="http://localhost:11434")
+model = init_chat_model("deepseek-chat", model_provider="deepseek")
+agent = create_deep_agent(
+    model = model,
+    tools=[internet_search],
+    system_prompt=research_instruction,
+    # 本地文件持久化， 使用虚拟路径
+    backend=FilesystemBackend(root_dir="D:\\workspace\\workspace-python\\python\\llm\\deepAgents", virtual_mode=True)
+)
 
 # 调用代理并打印结果
-result = agent.invoke({"messages": [{"role": "user", "content": "什么是 langgraph?请用中文回答"}]})
+# 调用大模型时指定存储位置
+result = agent.invoke({"messages": [{"role": "user", "content": "什么是 langgraph?请用中文回答。将草稿写入 /draft.txt，将最终报告保存到 /memories/report.txt"}]})
+
+
 # -1 表示取列表的最后一个元素，即代理最终生成的回复消息。代理在执行过程中会产生多条消息（工具调用、工具返回、中间推理等），最后一条才是最终答案，所以用 -1 来获取。
 print(result["messages"][-1].content)

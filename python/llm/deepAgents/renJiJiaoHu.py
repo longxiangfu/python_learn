@@ -69,7 +69,9 @@ def get_user_decisions(actions: []) -> []:
 checkpointer = MemorySaver()
 
 # 创建深度代理
-model = init_chat_model("glm-4.6:cloud", model_provider="ollama", base_url="http://localhost:11434")
+# model = init_chat_model("gemma4", model_provider="ollama", base_url="http://localhost:11434")
+model = init_chat_model("deepseek-chat", model_provider="deepseek") # 须添加环境变量：DEEPSEEK_API_KEY
+
 agent = create_deep_agent(
     model=model,
     tools=[delete_file, read_file, send_email],
